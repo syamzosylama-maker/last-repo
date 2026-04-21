@@ -1,0 +1,17 @@
+body {
+  background: url('Background.png') no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+
+button {
+  margin: 10px;
+  padding: 15px;
+  background: #8b4513;
+  color: #fff;
+  border: 2px solid #000;
+  cursor: pointer;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Chasse au trésor - P7 DSTI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🏴‍☠️ Chasse au trésor des 7 îles</h1>
+
+  <!-- Connexion -->
+  <div id="connexion">
+    <p>Entrez le nom de votre équipe :</p>
+    <input id="nomEquipe" placeholder="Equipe1">
+    <button onclick="connecter()">Commencer l’aventure</button>
+  </div>
+
+  <!-- Carte -->
+  <div id="carte" style="display:none;">
+    <button onclick="ouvrirIle('Bat5')">Bat5</button>
+    <button onclick="ouvrirIle('Bat7')">Bat7</button>
+  </div>
+
+  <!-- Zone énigme -->
+  <div id="enigme"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

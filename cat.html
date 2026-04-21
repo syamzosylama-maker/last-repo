@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Tableau de bord admin</title>
+</head>
+<body>
+  <h1>Progression des équipes</h1>
+  <div id="dashboard"></div>
+
+  <script>
+    async function chargerProgression() {
+      const data = await fetch("enigmes.json").then(r => r.json());
+      let html = "";
+      for (let equipe in data) {
+        if (equipe !== "enigmes") {
+          html += `<p>${equipe} : ${data[equipe].length} chambres prévues</p>`;
+        }
+      }
+      document.getElementById("dashboard").innerHTML = html;
+    }
+    chargerProgression();
+  </script>
+</body>
+</html>
